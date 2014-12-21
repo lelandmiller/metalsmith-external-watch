@@ -35,7 +35,7 @@ module.exports = function(buildFunction) {
         }).resume();
     }).listen(8080);
 
-    gaze(['templates/*', 'src/**/*'], function(err, watcher) {
+    gaze(['templates/*', 'src/**/*'], function() {
         console.log(chalk.green('Watching files'));
 
         this.on('changed', function(filepath) {
@@ -45,7 +45,7 @@ module.exports = function(buildFunction) {
 
 
             buildFunction(function() {
-                console.log(chalk.blue('Build successful'))
+                console.log(chalk.blue('Build successful'));
                 lrServer.changed({
                     body: {
                         files: ['*']
