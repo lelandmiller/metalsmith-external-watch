@@ -2,7 +2,6 @@
   "name": "metalsmith-external-watch",
   "version": "0.0.0",
   "description": "A module to watch source directories, run a preview server, and trigger builds for a Metalsmith site.",
-
   "author": {
     "name": "Leland Miller",
     "email": "lelandmiller@gmail.com",
@@ -19,7 +18,12 @@
     "watch",
     "preview"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "gaze": "^0.6.4",
+    "node-static": "^0.7.6",
+    "tiny-lr": "^0.1.4"
+  },
   "devDependencies": {
     "grunt-cli": "^0.1.13",
     "grunt-contrib-jshint": "^0.10.0",
