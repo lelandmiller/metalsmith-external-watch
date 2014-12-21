@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-external-watch",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "A module to watch source directories, run a preview server, and trigger builds for a Metalsmith site.",
   "author": {
     "name": "Leland Miller",
