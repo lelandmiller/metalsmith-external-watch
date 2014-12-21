@@ -17,9 +17,9 @@ $ npm install --save metalsmith-external-watch
 ## Usage
 
 ```js
-var metalsmith-external-watch = require('metalsmith-external-watch');
+var externalWatch = require('metalsmith-external-watch');
 
-metalsmith-external-watch(function() {
+externalWatch(function() {
     Metalsmith(__dirname)
         .build();
 });
